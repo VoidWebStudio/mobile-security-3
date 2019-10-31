@@ -1,0 +1,101 @@
+$bcg-color: #000;
+$font-family: "Calibri", san-serif;
+$font-size: 16px;
+$font-color: #fff;
+$container-padding: 60px;
+$font-size-mobile: 20px;
+.container-main-call{
+  display: flex;
+  justify-content: center;
+  background-color: $bcg-color;
+}
+.answer-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+
+  background-color: $bcg-color;
+  .accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:$font-color;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    text-align: left;
+    outline: none;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    background-color: $bcg-color;
+  }
+  .active-answer, .accordion:hover,:focus,:active {
+    outline: none!important;
+
+  }
+  .active-answer{
+    border: none;
+    color: #ffffff!important;
+  }
+}
+.rotate-image{
+  img{
+    transform: rotate(180deg);
+    transition: 300ms ease all;
+  }
+}
+.remove-image{
+  img{
+    transform: rotate(0);
+    transition: 300ms ease all;
+  }
+}
+
+.add-animation{
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.panel {
+  display: none;
+  width: 100%;
+  background-color:$bcg-color;
+  overflow: hidden;
+  padding-left: 10px;
+  border-bottom: 1px solid #ffffff;
+  animation-name: fadeInDown;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  p{
+    font-family:$font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .answer-section{
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,51 @@
+$bcg-color: #000;
+$font-family: "Calibri", san-serif;
+$font-size: 25px;
+$font-color: #fff;
+.container-main-help{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-help{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 50px;
+  p{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ffffff;
+    padding: 9px 0 9px 0;
+    font-family: $font-family;
+    font-size: $font-size;
+    color:$font-color;
+    margin: 0;
+  }
+  input{
+    border-top: 1px solid #ffffff;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background-color: $bcg-color;
+    padding: 9px 0 9px 0;
+    outline: none;
+    color: #fff;
+    ::placeholder{
+      color: #fff;
+    }
+
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .main-help{
+    background-color: $bcg-color;
+    padding-top: 10px;
+    p{
+      font-size: 16px;
+    }
+    input{
+
+    }
+  }
+}
