@@ -1,0 +1,54 @@
+$font-family: "Calibri", san-serif;
+$font-size: 16px;
+$font-color: #fff;
+$font-size-mobile: 20px;
+.container-agreement{
+  background-color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.agreement-main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  h1{
+    font-family: $font-family;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+  h2{
+    font-family: $font-family;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+  }
+  p{
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .container-agreement{
+    padding: 0;
+    h1{
+      font-family: $font-family;
+      font-size: 25px;
+      font-weight: normal;
+      text-align: left;
+    }
+    h2{
+      font-size: 18px;
+      font-weight: normal;
+    }
+    p{
+      font-size: 14px;
+      font-weight: lighter;
+    }
+  }
+
+}

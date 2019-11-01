@@ -1,0 +1,122 @@
+$bcg-color: #000;
+$font-family: "Calibri", san-serif;
+$font-size: 16px;
+$font-color: #fff;
+$container-padding: 60px;
+$font-size-mobile: 20px;
+
+
+.container-main-account{
+  display: flex;
+  justify-content: center;
+  background-color: $bcg-color;
+  .account-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    .prof-pic{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .profile-image{
+        img{
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .shadow{
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        opacity: 0.5;
+        filter: blur(10px);
+        transform: scale(1, 0.1);
+      }
+      p{
+        display: flex;
+        align-items: center;
+        font-family: $font-family;
+        font-size: $font-size;
+        color:$font-color;
+        margin: 0;
+      }
+    }
+    .prof-settings{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 20px;
+      div{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        .edit-img{
+          max-width: 30px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          padding: 15px;
+          background-image: url("../img/edit.png");
+          background-repeat: no-repeat;
+          background-size: 15px;
+          background-position: center;
+        }
+        .plus-img{
+          max-width: 30px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          padding: 15px;
+          background-image: url("../img/plus.png");
+          background-repeat: no-repeat;
+          background-size: 15px;
+          background-position: center;
+        }
+        .exit-img{
+          max-width: 30px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          padding: 15px;
+          background-image: url("../img/exit.png");
+          background-repeat: no-repeat;
+          background-size: 15px;
+          background-position: center;
+        }
+        a{
+          display: flex;
+          align-items: center;
+          flex-basis: 80%;
+          padding-left: 15px;
+          font-family: $font-family;
+          font-size: 20px;
+          color:$font-color;
+          margin: 0;
+          text-decoration: none;
+        }
+      }
+      div:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .account-main{
+    width: 100% !important;
+    .prof-settings{
+      div{
+        width: 100% !important;
+        a{
+          font-size: 16px!important;
+        }
+      }
+    }
+  }
+}
