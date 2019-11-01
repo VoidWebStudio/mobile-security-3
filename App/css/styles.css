@@ -453,7 +453,7 @@
         font-size: 16px !important; } }
 
 .container-agreement {
-  background-color: white;
+  background-color: #000;
   padding-left: 60px;
   padding-right: 60px; }
 
@@ -468,33 +468,33 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   flex-direction: column;
-  background-color: white; }
+  background-color: #000; }
   .agreement-main h1 {
     font-family: "Calibri", san-serif;
     font-size: 28px;
     font-weight: bold;
-    color: #000000;
+    color: #fff;
     text-align: center; }
   .agreement-main h2 {
     font-family: "Calibri", san-serif;
     font-size: 25px;
     font-weight: bold;
-    color: #000000; }
+    color: #fff; }
   .agreement-main h3 {
     font-family: "Calibri", san-serif;
     font-size: 23px;
     font-weight: bold;
-    color: #000000; }
+    color: #fff; }
   .agreement-main h4 {
     font-family: "Calibri", san-serif;
     font-size: 20px;
     font-weight: bold;
-    color: #000000; }
+    color: #fff; }
   .agreement-main p {
     font-family: "Calibri", san-serif;
     font-size: 18px;
     font-weight: normal;
-    color: #000000; }
+    color: #fff; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container-agreement {
