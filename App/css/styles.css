@@ -498,7 +498,8 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container-agreement {
-    padding: 0; }
+    padding-left: 10px;
+    padding-right: 10px; }
     .container-agreement h1 {
       font-family: "Calibri", san-serif;
       font-size: 25px;
