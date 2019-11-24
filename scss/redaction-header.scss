@@ -1,11 +1,11 @@
 $bcg-color: #000;
 $font-family: "FuturicaLt", san-serif;
-$font-size: 20px;
+$font-size: 38px;
 $font-color: #fff;
 $container-padding: 60px;
 $font-size-mobile: 20px;
 
-.header-account{
+.header-redaction{
   display: flex;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -18,7 +18,7 @@ $font-size-mobile: 20px;
     h1{
       font-weight: normal;
       font-family: $font-family;
-      font-size: 38px;
+      font-size: $font-size;
       color:$font-color;
     }
   }
@@ -28,7 +28,7 @@ $font-size-mobile: 20px;
   src: url(../font/a_FuturicaLt-Thin_2302.ttf);
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  .header-account{
+  .header-redaction{
     padding-top: 5px;
     .help{
       justify-content: center;

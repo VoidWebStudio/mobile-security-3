@@ -1,0 +1,53 @@
+$bcg-color: #000;
+$font-family: "FuturicaLt", san-serif;
+$font-size: 16px;
+$font-color: #fff;
+$container-padding: 60px;
+$font-size-mobile: 20px;
+
+.container-main-redaction{
+  display: flex;
+  justify-content: center;
+  background-color: $bcg-color;
+  .redaction-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    .prof-pic-redaction{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .profile-image-redaction{
+        img{
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .prof-settings-redaction{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+      .first-redaction{
+        padding-bottom: 20px;
+      }
+      .second-redaction{
+        padding-bottom: 20px;
+      }
+      input{
+        background-color: #494949;
+        border-radius: 8px;
+        padding: 5px 45px;
+        outline: none;
+        border: none;
+        color: $font-color;
+        font-family: $font-family;
+      }
+    }
+  }
+}

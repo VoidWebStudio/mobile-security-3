@@ -1,4 +1,4 @@
-$font-family: "Calibri", san-serif;
+$font-family: "FuturicaLt", san-serif;
 $font-size: 16px;
 $font-color: #fff;
 $font-size-mobile: 20px;
@@ -46,6 +46,10 @@ $bcg-color: #000;;
     font-weight: normal;
     color: $font-color;
   }
+}
+@font-face {
+  font-family: FuturicaLt;
+  src: url(../font/a_FuturicaLt-Thin_2302.ttf);
 }
 @media (min-width: 320px) and (max-width: 480px){
   .container-agreement{

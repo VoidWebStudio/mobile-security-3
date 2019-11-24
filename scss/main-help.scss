@@ -1,5 +1,5 @@
 $bcg-color: #000;
-$font-family: "Calibri", san-serif;
+$font-family: "FuturicaLt", san-serif;
 $font-size: 25px;
 $font-color: #fff;
 .container-main-help{
@@ -27,6 +27,7 @@ $font-color: #fff;
     border-bottom: none;
     border-left: none;
     border-right: none;
+    font-family: $font-family;
     background-color: $bcg-color;
     padding: 9px 0 9px 0;
     outline: none;
