@@ -11,7 +11,7 @@ $font-size-mobile: 20px;
 }
 .container-buy{
   background-color: $bcg-color;
-  height: 100vw;
+  height: calc(100vh - 20px);
   width: 100%;
   margin: 0;
   padding: 0;

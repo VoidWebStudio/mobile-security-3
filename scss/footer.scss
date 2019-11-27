@@ -1,0 +1,32 @@
+$bcg-color: #000;
+$font-family: "FuturicaLt", san-serif;
+$font-size: 20px;
+$font-color: #fff;
+
+.container-footer{
+  display: flex;
+  width: 100%;
+  .footer{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .next{
+      width: 100%;
+      a{
+        background-color: #494949;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-family;
+        font-size: $font-size;
+        color: $font-color;
+        text-decoration: none;
+        padding: 10px 0;
+      }
+    }
+  }
+
+}
